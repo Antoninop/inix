@@ -1,45 +1,54 @@
+// UsernameInputPage.module.scss
 
-.pagePseudoContainer {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.pagePseudoContainer h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.pagePseudoContainer form {
+.Components {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
+    overflow-y: auto; /* Activer la barre de défilement verticale en cas de besoin */
 
-.pagePseudoContainer input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    .pagePseudoContainer {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-.pagePseudoContainer button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-.pagePseudoContainer button:hover {
-    background-color: #0056b3;
+        .inputField {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .submitButton {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+
+        .errorMsg {
+            color: #ff0000;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
 }
